@@ -36,7 +36,7 @@ const validate = (req, res, next) => {
 		return res.redirect('/');
 	}
 	return next();
-}
+};
 
 app.get('/major', validate, (req, res) => {
 	res.render('major', { nome: req.query.nome });
